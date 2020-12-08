@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Miriam Libre", sans-serif;
+}
+body {
+  background: white;
+  color: #303030;
+  word-wrap: break-word;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  background: #303030;
+  border-bottom: 2px solid #38b559;
+  color: #fff;
+}
+section {
+  position: relative;
+  width: 100%;
+  top: 100px;
+  padding: 0;
+  word-wrap: break-word;
+}
+.container {
+  max-width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  height: 75px;
+}
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+}
+.logo {
+  position: absolute;
+  top: 25px;
+  left: auto;
+}
+.logo.circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 27px;
+  left: auto;
+  border-bottom: 5px solid #38b559;
+  border-radius: 50%;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-container {
+  flex: 4;
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  flex: 3;
+}
+.ex-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 25px;
+  background: #eee;
+  line-height: 1;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #ccc;
+}
+.btn2 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 25px;
+  background: #eee;
+  line-height: 1;
+  transition: 0.5s;
+  margin-left: 0.8rem;
+}
+.btn2:hover {
+  background: #ccc;
+}
+.nav-links > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link > a {
+  line-height: 3rem;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+.nav-link > a > i {
+  margin-left: 0.2rem;
+}
+.dropdown {
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 15rem;
+  transform: translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.dropdown > ul {
+  position: relative;
+}
+.dropdown-link > a {
+  display: flex;
+  padding: 0.8rem 1rem;
+  background: #303030;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+  font-size: 0.8rem;
+}
+.dropdown-link:nth-last-child(2) > a {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.dropdown-link:hover > a {
+  background: #505050;
+}
+
+.dropdown-link > a > i {
+  transform: rotate(-90deg);
+}
+.dropdown-link:not(:nth-last-child(2)) {
+  border-bottom: 1px solid #505050;
+}
+.arrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -5.5px;
+  left: 32px;
+  background-color: #38b559;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: -1;
+}
+.dropdown-link:first-child:hover ~ .arrow {
+  background-color: #505050;
+}
+.dropdown-link {
+  position: relative;
+}
+.dropdown.second {
+  top: 0;
+  left: 100%;
+  padding-left: 0.8rem;
+  cursor: pointer;
+  transform: translateX(10px);
+}
+.dropdown.second .arrow {
+  top: 10px;
+  left: -5.5px;
+  background: #303030;
+}
+.nav-link:hover > .dropdown,
+.dropdown-link:hover > .dropdown {
+  transform: translate(0, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown.second .dropdown-link:nth-child(1) > a {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
