@@ -290,11 +290,6 @@ ul{
     Screen Adjustments
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width: 800px) {
-        .mquee{
-            display: none;
-        }
-    }
-    @media screen and (max-width: 400px) {
         .x-container{
             display: none;
         }
@@ -302,6 +297,9 @@ ul{
             display: none;
         }
         .rightbody{
+            display: none;
+        }
+        .mquee{
             display: none;
         }
     }
