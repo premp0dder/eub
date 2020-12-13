@@ -1,0 +1,305 @@
+/*
+
+
+█▀█ █▀█ █▀▀ █▀▄▀█   █▀█ █▀█ █▀▄ █▀▄ █▀▀ █▀█
+█▀▀ █▀▄ ██▄ █░▀░█   █▀▀ █▄█ █▄▀ █▄▀ ██▄ █▀▄
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 10px;
+    letter-spacing: .1rem;
+}
+a{
+    text-decoration: none;
+    cursor: default;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Header Area
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    .h-container{
+        background: #fff;
+        display: flex;
+        height: 6.4rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        /*box-shadow: 0.5rem 0 0.5rem #ddd;*/
+        align-items: center;
+        cursor: default;
+        border-bottom: 2px solid rgb(41,171,135);
+    }
+        .l-container{
+            display: flex;
+            flex: 0;
+            align-items: center;
+            justify-content: center;
+        }
+            .hamburger{
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                padding: 1.5rem;
+                margin: 1.2rem 1.5rem 1rem 1.5rem;
+                border-radius: 50%;
+            }
+            .hamburger:hover {
+                background: #f8f8f8;
+            }
+            .hamburger > i{
+                font-size: 2rem;
+            }
+    
+        .n-container{
+            display: flex;
+            flex: 4;
+            align-items: center;
+            justify-content: left;
+        }
+            .logo{
+                flex: 0;
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: #333;
+                text-transform: uppercase;
+                margin-right: 2.5rem;
+            }
+            .logo span{
+                font-size: 2rem;
+                font-weight: 800;
+                color:rgb(79, 190, 144);
+            }
+            .mquee{
+                display: flex;
+                align-items: center;
+                flex: 3;
+                font-size: 1.6rem;
+            }
+        .x-container{
+            display: flex;
+            flex: 0;
+            align-items: center;
+            justify-content: right;
+        }
+            .x-link{
+                display: flex;
+                flex: 0;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+            .b1 {
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                padding: 1.5rem;
+                margin: 1.2rem 1.5rem 1rem 1.5rem;
+                border-radius: 50%;
+                color: #333;
+            }
+            .b1:hover {
+                background: #f8f8f8;
+            }
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Side.menu Area
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .menu{                                                      /* main menu body */
+        left:-304px;
+        top: 6.5rem;
+        height:100%;
+        position: fixed;
+        width: 304px;
+        z-index: 1;
+        /*box-shadow:  0 0 .5rem rgb(41,171,135);*/
+        border-right: 2px solid rgb(41,171,135);
+        transition: 0.5s;
+        background: #fff;
+    }
+    .menu:hover{
+        overflow-y: auto;
+    }
+    .menu i{
+        margin-right: 1rem;
+    }
+    .menu ul{
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        padding: 0 2rem 0 0;
+    }
+        .menu ul li{
+            line-height: 5rem;
+            margin-top: 1rem;
+        }
+        .menu ul li a{
+            position: relative;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.4rem;
+            padding-left: 2rem;
+            display: block;
+            width: 100%;
+            border-radius: 0 5rem 5rem 0;
+            text-transform: uppercase;
+        }
+        .menu ul li.active a{
+            background: #e8e8e8;
+        }
+        .menu ul li a:hover{
+            background: #f8f8f8;
+        }
+        .menu ul li a span{                                     /* for right icon*/
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+        }
+            .menu ul ul{
+                position: static;
+                display: none;
+            }
+            .menu ul ul li{
+                line-height: 3.5rem;
+            }
+            .menu ul ul li a{
+                position: relative;
+                color: #333;
+                text-decoration: none;
+                font-size: 1.2rem;
+                padding: 0 0 0 4rem;
+                display: block;
+                width: 100%;
+                border-radius: 0 5rem 5rem 0;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+            }
+            .menu ul li.active ul li a{
+                background: #fff;
+            }
+            .menu ul ul li a:hover{
+                background: #f8f8f8!important;
+            }
+        
+    .menu ul .hide{
+        display: none;
+    }
+    .menu ul .om1css.show1{
+        display: block;
+    }
+    .menu ul .om2css.show2{
+        display: block;
+    }
+    .menu ul .om3css.show3{
+        display: block;
+    }
+    .menu ul .om4css.show4{
+        display: block;
+    }
+    .menu ul .om5css.show5{
+        display: block;
+    }
+    .menu ul .om6css.show6{
+        display: block;
+    }
+    .menu ul .om7css.show7{
+        display: block;
+    }
+    .menu ul .om8css.show8{
+        display: block;
+    }
+    .menu ul .om9css.show9{
+        display: block;
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Body Area
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .mainbody{
+        display: flex;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 1rem .5rem;
+        background: #fff;
+    }
+    .mainbodycolor{
+        display: flex;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 1rem .5rem;
+        background: #f8f8f8;
+        height: 211px;
+    }
+    .mainbodycolor h3 span {
+        font-size: 3.3rem;
+        color: rgb(79, 190, 144);
+        box-shadow: 
+        0 3px 0 1px #f8f8f8, /* to indent the green bottom line with the same color as the background */
+        0 3px 0 0 rgb(79, 190, 144),  /* to create a bottom 3px high green line */
+        inset 0 2px 0 0 rgb(79, 190, 144);
+    }
+    .leftbody{
+        flex: 1;
+    }
+    .centerbody{
+        flex: 3;
+        text-align: justify;
+        text-justify: auto;
+    }
+    .rightbody{
+        flex: 1;
+    }
+    .slider{
+        display: flex;
+        width: 100%;
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+    h3 i{
+        border-bottom: 2px solid rgb(79, 190, 144);
+        font-style: normal;
+    }
+    h3 span {
+        font-size: 3.3rem;
+        color: rgb(79, 190, 144);
+        box-shadow: 
+        0 3px 0 1px #fff, /* to indent the green bottom line with the same color as the background */
+        0 3px 0 0 rgb(79, 190, 144),  /* to create a bottom 3px high green line */
+        inset 0 2px 0 0 rgb(79, 190, 144);
+    }
+    p{
+        line-height: 3rem;
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Screen Adjustments
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width: 800px) {
+        .x-container{
+            display: none;
+        }
+        .leftbody{
+            display: none;
+        }
+        .rightbody{
+            display: none;
+        }
+        .mquee{
+            display: none;
+        }
+    }
